@@ -1,0 +1,104 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+    background-color: #1d1763;
+}
+
+
+/* header */
+header {
+    background-color: #07032e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+footer {
+    background-color: #07032e;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.header_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_img {
+    height: 60px;
+}
+
+
+/* card */
+
+.main_section {
+    display: flex;
+    justify-content: center;
+
+}
+
+.pokecard {
+    background-color: #07032e;
+    color: white;
+    margin-top: 50px;
+    border-radius: 8px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid transparent;
+    box-shadow: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.card_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4536f7ed;
+    height: 190px;
+}
+
+.card_footer {
+    padding: 8px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#card_section_content {
+    display: flex;
+    max-width: 1440px;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.card_header {
+    background-color: #07032e;
+}
+
+.dialog_pokecard{
+    height: 500px;
+}
+
+/* dialog{
+    display: block;
+} */
+
+.button_section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}

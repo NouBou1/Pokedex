@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <script src="templates/template.js"></script>
+</head>
+
+<body onload="init()">
+    <header class="header_main">
+        <div class="header_left">
+            <img class="header_img" src="/assets/img/headerIMG.png" alt="pokeball_header_img">
+            <h1>Pokedex</h1>
+        </div>
+        <div class="header_right">
+            <label>Search:</label>
+            <input type="text" id="search_input">
+        </div>
+    </header>
+    <main>
+
+        <section class="main_section">
+            <div id="card_section">
+                <!-- <div></div> -->
+            </div>
+        </section>
+
+        <section class="main_section">
+            <div id="card_section_content">
+            </div>
+        </section>
+
+        <dialog id="dialog_pokecard">
+            <div id="dialog_content">
+
+            </div>
+        </dialog>
+
+        <section class="button_section" onclick="getMorePokemon()">
+            <button>weitere Pokemon</button>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+     <script src="script.js"></script>
+</body>
+
+</html>
