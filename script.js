@@ -87,9 +87,9 @@ function renderPokeCard(pokemonImg, indexPokemon) {
 function renderPokeCardDialog(pokemonImg) {
   let pokeCardDialogRef = document.getElementById('dialog_content');
   pokeCardDialogRef.innerHTML = "";
-
+  let dialogImg = dataList[indexPokemon].sprites.other.home.front_default
   for (let indexPokemonDialog = 0; indexPokemonDialog < dataList.length; indexPokemonDialog++) {
-    pokeCardDialogRef.innerHTML += getPokeCardDialogTemplate(indexPokemonDialog, pokemonImg);
+    pokeCardDialogRef.innerHTML += getPokeCardDialogTemplate(indexPokemonDialog, dialogImg);
   }
 }
 
