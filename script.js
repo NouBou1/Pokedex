@@ -5,7 +5,6 @@ const color_URL = "https://pokeapi.co/api/v2/pokemon-color/";
 let pokeList;
 let pokeImg;
 let dataList = [];
-let pokemonType = dataList[indexPokemon].types.;
 
 
 

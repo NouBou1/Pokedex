@@ -6,7 +6,7 @@ function getPokeCardTemplate(indexPokemon, pokemonImg, pokemonType) {
                         <div id="card_name" class="card_name">${pokeList[indexPokemon].name}</div>
                     </div>
                         <img class="card_img" src="${pokemonImg}" alt="">
-                    <div id="pokemon_type" class="card_footer">${pokemonType}</div>
+                    <div id="pokemon_type" class="card_footer"</div>
                     <div> </div>
                 </div>
             </div>
