@@ -56,6 +56,22 @@ footer {
 
 }
 
+dialog {
+    background-color: #07032e;
+    color: white;
+    margin-top: 50px;
+    border-radius: 8px;
+    
+    border: 2px solid transparent;
+    box-shadow: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
 .card_header {
     display: flex;
     justify-content: space-between;
