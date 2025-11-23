@@ -59,15 +59,10 @@ footer {
 dialog {
     background-color: #07032e;
     color: white;
-    margin-top: 50px;
     border-radius: 8px;
-    
     border: 2px solid transparent;
     box-shadow: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+   
 }
 
 
@@ -82,14 +77,14 @@ dialog {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #4536f7ed;
-    height: 190px;
+    height: 350px;
 }
 
 .card_footer {
     padding: 8px 0px;
     display: flex;
     justify-content: center;
+    height: 50px
 }
 
 #card_section_content {
@@ -109,12 +104,24 @@ dialog {
     height: 500px;
 }
 
-/* dialog{
-    display: block;
-} */
-
 .button_section{
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+}
+
+.d_none{
+    display: none;
+}
+
+.type-icons {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.type-icon {
+  width: 30px;
+  height: 30px;
 }
