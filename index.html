@@ -13,12 +13,14 @@
 <body onload="init()">
     <header class="header_main">
         <div class="header_left">
-            <img class="header_img" src="./assets/img/headerIMG.png" alt="pokeball_header_img">
-            <h1>Pokedex</h1>
+
+            <h1>P<img class="header_img" src="./assets/img/headerIMG.png" alt="pokeball_header_img">kedèx</h1>
         </div>
         <div class="header_right">
-            <label>Search:</label>
-            <input type="text" id="search_input">
+
+            <input oninput="searchPokemon()" id="searchInput" placeholder="Search Pokémon">
+            <button>search</button>
+
         </div>
     </header>
     <main>
@@ -29,7 +31,7 @@
             </div>
         </section>
 
-        <section class="main_section">
+        <section class="main_section ">
             <div id="card_section_content">
             </div>
         </section>
@@ -40,10 +42,10 @@
             </div>
         </dialog>
 
-        <section class="button_section" >
+        <section class="button_section">
             <button onclick="getNextPokemon()">weitere Pokemon</button>
         </section>
-
+        <span id="loader1" class="loader d_none"></span>
     </main>
     <footer>
 
@@ -54,14 +56,15 @@
 
 
 <table>
-<tr>
-    <td></td>
-</tr>
-<tr>
-    <td></td>
-</tr>
-<tr>
-    <td></td>
-</tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
 </table>
+
 </html>
