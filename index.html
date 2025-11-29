@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/headerIMG.png">
+    <script src="js/templates/template.js"></script>
 
-    <script src="templates/template.js"></script>
 </head>
 
 <body onload="init()">
@@ -18,19 +20,23 @@
         </div>
         <div class="header_right">
 
-            <input oninput="searchPokemon()" id="searchInput" placeholder="Search Pokémon">
-            <button>search</button>
-
+            <input id="searchInput" placeholder="Search Pokémon">
+            <button class="search_btn" onclick="searchPokemon()"><img class="search_btn_icon"
+                    src="assets/icons/btn-icon/magnifying-glass-solid-full.svg" alt=""></button>
+            <button class="search_btn" onclick="clearSearch()"><img class="search_btn_icon"
+                    src="assets/icons/btn-icon/arrow-rotate-right-solid-full.svg" alt=""></button>
         </div>
     </header>
     <main>
 
         <section class="main_section">
             <div id="card_section">
-                <!-- <div></div> -->
             </div>
         </section>
 
+        <section id="base_stats">
+
+        </section>
         <section class="main_section ">
             <div id="card_section_content">
             </div>
@@ -43,28 +49,18 @@
         </dialog>
 
         <section class="button_section">
-            <button onclick="getNextPokemon()">weitere Pokemon</button>
+            <button class="next_btn" onclick="getNextPokemon()">weitere Pokemon</button>
         </section>
-        <span id="loader1" class="loader d_none"></span>
+        <span id="loader" class="loader"></span>
     </main>
     <footer>
 
     </footer>
-    <script src="templates/template.js"></script>
-    <script src="script.js"></script>
+    <script src="js/templates/template.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/fetch.js"></script>
+    <script src="js/db.js"></script>
 </body>
-
-
-<table>
-    <tr>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-    </tr>
-</table>
 
 </html>
