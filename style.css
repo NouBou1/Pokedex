@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Pokemon Classic';
-  src: url('fonts/Pokemon Classic.ttf') format('truetype');
+    font-family: 'Pokemon Classic';
+    src: url('fonts/Pokemon Classic.ttf') format('truetype');
 }
 
 body {
-    font-family: 'Pokemon Classic'!important;
+    font-family: 'Pokemon Classic' !important;
     margin: 0 0;
     padding: 0 0;
     background-color: #1d1763;
@@ -14,8 +14,8 @@ body {
     height: 100vh;
     background-position: center;
     background-size: cover;
-    position: relative;
     scroll-behavior: smooth;
+    display: flow;
 }
 
 h1 {
@@ -24,7 +24,7 @@ h1 {
     transition: all 2s ease-in-out
 }
 
-input{
+input {
     width: 300px;
 }
 
@@ -43,7 +43,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 40px;
-    position: sticky;
+    height: 100px;
+    position: sticky !important;
     top: 0;
     z-index: 1;
 }
