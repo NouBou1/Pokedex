@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Pokemon Classic';
+  src: url('fonts/Pokemon Classic.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Pokemon Classic'!important;
+    margin: 0 0;
+    padding: 0 0;
+    background-color: #1d1763;
+    background-image: url(./assets/img/pokemon-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    transition: all 2s ease-in-out
+}
+
+input{
+    width: 300px;
+}
+
+input {
+    border-radius: 18px;
+}
+
+.d_none {
+    display: none;
+}
+
+header {
+    background-color: #07032e;
+    color: white;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+footer {
+    background-color: #07032e;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.header_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_img {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_img:hover {
+    transform: rotate(1080deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.main_section {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+
+}

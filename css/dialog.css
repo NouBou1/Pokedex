@@ -1,0 +1,53 @@
+
+dialog {
+    background-color: #07032e21;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    box-shadow: 15px;
+
+}
+
+.card_tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tab_btn {
+    flex: 1;
+    border: none;
+    padding: 6px 0;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.tab_btn.active {
+    background: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+}
+
+.dialog_tab {
+    display: none;
+    margin: 0px 10px;
+}
+
+.dialog_tab img {
+    margin-top: 18px;
+    justify-self: center;
+    align-self: center;
+}
+
+.dialog_tab.active {
+    display: block;
+}
+
+.dialog_pokecard {
+    height: 500px;
+}
+
+#dialog_content {
+    border-radius: 18px;
+}
