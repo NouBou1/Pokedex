@@ -15,7 +15,7 @@ body {
     background-position: center;
     background-size: cover;
     scroll-behavior: smooth;
-    display: flow;
+   
 }
 
 h1 {
@@ -43,10 +43,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 40px;
-    height: 100px;
-    position: sticky !important;
+    position: fixed; 
     top: 0;
-    z-index: 1;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 footer {
@@ -77,12 +78,14 @@ footer {
 .main_section {
     display: flex;
     justify-content: center;
+    padding-top: 40px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 661px) {
     header {
         flex-direction: column;
     }
 
 
 }
+

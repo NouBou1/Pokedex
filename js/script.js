@@ -9,7 +9,7 @@ async function init() {
   console.log(pokeList);
 }
 
-//Dialog 
+
 function closeCardDialog() {
   let cardDialog = document.getElementById('dialog_pokecard');
   cardDialog.close();
@@ -35,7 +35,7 @@ function showCardDialog(indexPokemon) {
   document.body.style.overflow = "hidden";
 }
 
-// Search
+
 function searchPokemon() {
   const inputRef = document.getElementById('searchInput');
   const input = inputRef.value.toLowerCase();
@@ -62,7 +62,7 @@ function clearSearch() {
   renderPokeCard();
 }
 
-// LoadingSpinner
+
 function showSpinner() {
   const spinner = document.getElementById('loader');
   spinner?.classList.remove("d_none");
@@ -74,7 +74,7 @@ function hideSpinner() {
   spinner?.classList.add("d_none");
 }
 
-// Dialog Tabs - Stats
+
 function switchDialogTab(tabName, btn) {
   let tabs = document.getElementsByClassName('dialog_tab');
   for (let index = 0; index < tabs.length; index++) {
@@ -104,7 +104,6 @@ function getStats(stats) {
   return baseStatRef;
 }
 
-// Eventlistener - close if !clickInside
 window.addEventListener('load', function () {
   const dialog = document.getElementById('dialog_pokecard');
 
