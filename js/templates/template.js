@@ -8,7 +8,7 @@ function getPokeCardTemplate(indexPokemon, pokemonImg) {
   const mainType = types[0]?.type?.name;
   const cardColor = typeColors[mainType]?.color;
   return `
-    <div class="pokecard_style" id="pokecard"  style="background-color: ${cardColor};"  onclick="showCardDialog(${indexPokemon})";  tabindex="0" >
+          <div class="pokecard_style" id="pokecard"  style="background-color: ${cardColor};"  onclick="showCardDialog(${indexPokemon})";  tabindex="0" >
                     <div id="card_header" class="card_header">
                         <div id="card_number" class="card_number">${pokeList[indexPokemon].id}</div>
                         <div id="card_name" class="card_name">${pokeList[indexPokemon].name.toUpperCase()}</div>
@@ -26,7 +26,7 @@ function getPokeCardTemplate(indexPokemon, pokemonImg) {
                       </div>
                     </div>
                 </div>
-            </div>
+          </div>
 `}
 
 
@@ -38,9 +38,7 @@ function getPokeCardDialogTemplate(indexPokemon, dialogImg, pokemon) {
   const abilities = pokeList[indexPokemon].abilities;
   const ability1 = abilities[0]?.ability?.name;
   const ability2 = abilities[1]?.ability?.name;
-
   const stats = getStats(pokeList[indexPokemon].stats);
-
 
   return `
     <div class="card_bg" style="background-color: ${cardColor};">
@@ -54,14 +52,12 @@ function getPokeCardDialogTemplate(indexPokemon, dialogImg, pokemon) {
         <img class="card_img" src="${dialogImg}" alt="${pokeList[indexPokemon].name}">
       </div>
 
-    
       <div class="card_tabs">
         <button class="tab_btn active" onclick="switchDialogTab('main', this)">Main</button>
         <button class="tab_btn" onclick="switchDialogTab('stats', this)">Stats</button>
         <button class="tab_btn" onclick="switchDialogTab('shiny', this)">Cartoon</button>
       </div>
 
-      
       <section id="dialog_tab_main" class="dialog_tab active">
         <table>
           <tr>
@@ -84,7 +80,6 @@ function getPokeCardDialogTemplate(indexPokemon, dialogImg, pokemon) {
         ${stats}
       </section>
 
-     
       <section id="dialog_tab_shiny" class="dialog_tab shiny_tab" >
         <img class="card_img" style="height: 200px;" src="${shinyImg}" alt="${pokeList[indexPokemon].name} shiny">
       </section>
@@ -106,9 +101,7 @@ function getStatTemplate(indexStats, stats) {
   if (base > 100) {
     width = 100;
   }
-
   const color = statColors[indexStats % statColors.length];
-
   return `
       <div>${statName.toUpperCase()}: ${base}</div>
       <div class="w3-light-grey" style="border-radius:12px;">
