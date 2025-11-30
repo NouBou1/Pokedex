@@ -86,6 +86,8 @@ footer {
         flex-direction: column;
     }
 
-
+    #dialog_content {
+    width:320px;
+}
 }
 

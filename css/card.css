@@ -29,10 +29,11 @@
     display: flex;
     max-width: 1440px;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 50px;
     justify-content: center;
     margin: 0 20px;
     margin-bottom: 90px;
+
 
 }
 

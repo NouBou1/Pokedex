@@ -1,4 +1,3 @@
-
 dialog {
     background-color: #07032e21;
     color: white;
@@ -50,4 +49,5 @@ dialog {
 
 #dialog_content {
     border-radius: 18px;
+    width: 400px;
 }
