@@ -8,25 +8,24 @@ function getPokeCardTemplate(indexPokemon, pokemonImg) {
   const mainType = types[0]?.type?.name;
   const cardColor = typeColors[mainType]?.color;
   return `
-    <div class="pokecard_style" id="pokecard"  style="background-color: ${cardColor};"  onclick="showCardDialog(${indexPokemon})";  tabindex="0" >
-                    <div id="card_header" class="card_header">
-                        <div id="card_number" class="card_number">${pokeList[indexPokemon].id}</div>
-                        <div id="card_name" class="card_name">${pokeList[indexPokemon].name.toUpperCase()}</div>
-                    </div>
+          <div class="pokecard_style" id="pokecard"  style="background-color: ${cardColor};"  onclick="showCardDialog(${indexPokemon})";  tabindex="0" >
+              <div id="card_header" class="card_header">
+                  <div id="card_number" class="card_number">${pokeList[indexPokemon].id}</div>
+                  <div id="card_name" class="card_name">${pokeList[indexPokemon].name.toUpperCase()}</div>
+              </div>
+                  <img class="card_img" src="${pokemonImg}" alt="">
                   
-                        <img class="card_img" src="${pokemonImg}" alt="">
-                  
-                        <div id="pokemon_type" class="card_footer type-icons">
-                        <div class="type_container">
+              <div id="pokemon_type" class="card_footer type-icons">
+              <div class="type_container">
                     <div>${type1}${type2 ? " , " + type2 : ""}</div>
-                     <div  class="card_footer type-icons">
-                        <img class="type-icon" src="${icon1}" alt="${type1}">
-                        ${icon2 ? `<img class="type-icon" src="${icon2}" alt="${type2}">` : ""}
-                      </div>
-                      </div>
-                    </div>
+                  <div  class="card_footer type-icons">
+                    <img class="type-icon" src="${icon1}" alt="${type1}">
+                    ${icon2 ? `<img class="type-icon" src="${icon2}" alt="${type2}">` : ""}
+                  </div>
                 </div>
-            </div>
+              </div>
+              </div>
+          </div>
 `}
 
 
