@@ -1,13 +1,4 @@
-const base_URL = "https://pokeapi.co/api/v2/";
-const img_URL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/";
-const type_URL = "https://pokeapi.co/api/v2/type/1/"
-const color_URL = "https://pokeapi.co/api/v2/pokemon-color/";
 
-let pokeList;
-let pokeImg;
-let dataList = [];
-const limit = 20;
-let offset = 0;
 
 let typeColors = {
   bug: { icon: "./assets/icons/bug.svg", color: "#A6B91A" },

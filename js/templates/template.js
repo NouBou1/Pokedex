@@ -110,7 +110,7 @@ function getStatTemplate(indexStats, stats) {
 
   return `
       <div>${statName.toUpperCase()}: ${base}</div>
-      <div class="w3-light-grey" style="border-radius:12px;">
+        <div class="w3-light-grey" style="border-radius:12px;">
         <div style="border-radius:12px; height:18px;width:${width}%;background:${color}"></div>
       </div>
     `

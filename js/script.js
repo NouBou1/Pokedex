@@ -1,3 +1,4 @@
+let pokeImg;
 
 async function init() {
   showSpinner();
@@ -8,7 +9,6 @@ async function init() {
   }, 1500);
   console.log(pokeList);
 }
-
 
 function closeCardDialog() {
   let cardDialog = document.getElementById('dialog_pokecard');
@@ -34,7 +34,6 @@ function showCardDialog(indexPokemon) {
   renderPokeCardDialog(indexPokemon);
   document.body.style.overflow = "hidden";
 }
-
 
 function searchPokemon() {
   const inputRef = document.getElementById('searchInput');
