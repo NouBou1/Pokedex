@@ -8,7 +8,8 @@ function getPokeCardTemplate(indexPokemon, pokemonImg) {
   const mainType = types[0]?.type?.name;
   const cardColor = typeColors[mainType]?.color;
   return `
-          <div class="pokecard_style" id="pokecard"  style="background-color: ${cardColor};"  onclick="showCardDialog(${indexPokemon})";  tabindex="0" >
+          <li>
+          <button class="pokecard_style" id="pokecard"  style="background-color: ${cardColor};"  onclick="showCardDialog(${indexPokemon})";  tabindex="0" >
               <div id="card_header" class="card_header">
                   <div id="card_number" class="card_number">${pokeList[indexPokemon].id}</div>
                   <div id="card_name" class="card_name">${pokeList[indexPokemon].name.toUpperCase()}</div>
@@ -25,7 +26,8 @@ function getPokeCardTemplate(indexPokemon, pokemonImg) {
                 </div>
               </div>
               </div>
-          </div>
+          </button>
+          </li>
 `}
 
 

@@ -33,8 +33,8 @@
     justify-content: center;
     margin: 0 20px;
     margin-bottom: 90px;
-
-
+    list-style: none;
+    padding: 0;
 }
 
 .card_header {
