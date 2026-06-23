@@ -7,7 +7,7 @@ async function init() {
   setTimeout(() => {
     hideSpinner();  
   }, 1500);
-  console.log(pokeList);
+  // console.log(pokeList);
 }
 
 function closeCardDialog() {
